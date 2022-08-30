@@ -1,0 +1,16 @@
+html {
+    background-color: rgb(52, 65, 77);
+}
+
+.cy-container {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+#cy {
+    width: 90%;
+    height: 600px;
+    /* height: 60%; */
+    display: block;
+}
