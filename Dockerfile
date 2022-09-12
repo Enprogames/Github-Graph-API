@@ -9,4 +9,4 @@ RUN python -m pip install --upgrade pip && pip install -r requirements.txt
 # copy all code
 COPY . /app/
 # start server
-CMD ["uvicorn", "Github-Graph-API.graph_api_server:app", "--host", "fastapi", "--port", "8500"]
+CMD ["uvicorn", "Github-Graph-API.graph_api_server:app", "--proxy-headers", "--host", "gh_fastapi", "--port", "8500"]

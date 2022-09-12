@@ -159,11 +159,9 @@ class GithubGraphCacheHandler:
 
     def get_graph(self, force_overwrite: bool = False):
         if force_overwrite or not self.cache_exists() or (self.cache_exists() and self.get_cache_age() >= self.max_cache_age):
-            print(f"lamma Making new graph via github API. Graph cache exists: {self.cache_exists()}. Cache age: {self.get_cache_age()}")
             project_graph = self.get_new_github_graph()
             self.cache_graph(project_graph)
         else:
-            print("lamma Getting cached graph")
             project_graph = self.get_cached_graph()
 
         return project_graph

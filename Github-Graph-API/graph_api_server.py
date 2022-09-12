@@ -1,4 +1,4 @@
-# Run with uvicorn Github-Graph-API.graph_api_server:app --host fastapi --port 8500
+# Run with uvicorn Github-Graph-API.graph_api_server:app --host gh_fastapi --port 8500
 import os
 import sys
 
