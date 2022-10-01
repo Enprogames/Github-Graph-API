@@ -164,3 +164,4 @@ cython_debug/
 # Other
 *.ipynb
 /certbot
+/traefik-public-certificates
